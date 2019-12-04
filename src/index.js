@@ -24,7 +24,7 @@ export default class MSortableTable extends React.Component {
             data: props.data,
             searchType: props.multipleSearch ? "MULTIPLE" : "SINGLE",
             baseUrl: props.baseUrl ? props.baseUrl : false,
-            badge: props.badges ? true : false,
+            badge: props.searchBadges ? true : false,
         };
 
         this.handleSort = this.handleSort.bind(this);
@@ -160,7 +160,7 @@ export default class MSortableTable extends React.Component {
     
     render() {
         return(
-          <div>
+          <div className='react-sortable-table'>
             {this.state.badge && 
               <Badges data={this.state.filter.search} onRemove={this.handleBadges} />
             }

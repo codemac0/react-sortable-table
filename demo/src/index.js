@@ -72,7 +72,7 @@ class Demo extends Component {
           onChange={this.handleChange}
           baseUrl={'frontend/records'}
           multipleSearch={true}
-          badges={true}
+          searchBadges={true}
         />
       </div>
     )

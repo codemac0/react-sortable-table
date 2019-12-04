@@ -1,72 +1,72 @@
 /*mac table*/
-.responsive-table {
+.react-sortable-table .responsive-table {
     overflow: auto;
     max-width: 100%;
     max-height: 100%;
 }
-.mac-table,.mac-table tr,.mac-table thead,.mac-table tbody {
+.react-sortable-table .mac-table,.react-sortable-table .mac-table tr,.react-sortable-table .mac-table thead,.react-sortable-table .mac-table tbody {
     border: 0;
 }
-.mac-table {
+.react-sortable-table .mac-table {
     width: 100%;
     margin: 0;
     border: 0;
 }
-.mac-table tr {
+.react-sortable-table .mac-table tr {
     border:0;
     border-bottom: 1px solid #ddd;
     background-color: #fff;
 }
-.mac-table tr:last-child {
+.react-sortable-table .mac-table tr:last-child {
     border-bottom: 0;
 }
-.mac-table tr th,
-.mac-table tr td {
+.react-sortable-table .mac-table tr th,
+.react-sortable-table .mac-table tr td {
     text-align: left;
     border:0;
     font-size: 13px;
     padding:13px 15px;
 }
-.mac-table tr th {
+.react-sortable-table .mac-table tr th {
     background: #f6f6f6;
     font-weight: 500;
     padding:10px 15px;
 }
-.mac-table tr td {
+.react-sortable-table .mac-table tr td {
     font-weight: normal;
 }
-table.align-center tr th,
-table.align-center tr td {
+.react-sortable-table table.align-center tr th,
+.react-sortable-table table.align-center tr td {
     text-align: center;
 }
-.mac-table tr.no-data {
+.react-sortable-table .mac-table tr.no-data {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
     color: #ce2626;
 }
-.mac-table tr.no-data td {
+.react-sortable-table .mac-table tr.no-data td {
     text-align: center;
     font-weight: 500;
 }
-.mac-table th.sortable {
+.react-sortable-table .mac-table th.sortable {
     cursor: pointer;
 }
-.mac-table th.sortable svg {
+.react-sortable-table .mac-table th.sortable svg {
     margin-left: 10px;
 }
 
-.mac-table th.sortable span {
+.react-sortable-table .mac-table th.sortable span {
     display: flex;
     align-items: center;
 }
-.mac-table th .searchable {
+.react-sortable-table .mac-table th .searchable {
     display: flex;
     align-items: center;
     margin-top: 4px;
 }
-.mac-table th .searchable input {
+.react-sortable-table .mac-table th .searchable input {
     border: 1px solid #ddd;
     padding: 3px 5px;
     max-width: 120px;
@@ -74,29 +74,29 @@ table.align-center tr td {
     font-size: 12px;
     border-radius: 4px 0 0 4px;
 }
-.mac-table th .searchable select {
+.react-sortable-table .mac-table th .searchable select {
     font-size: 12px;
     border-color: #ddd;
     border-radius: 4px 0 0 4px;
 }
-.mac-table th .searchable button {
+.react-sortable-table .mac-table th .searchable button {
     padding: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0 4px 4px 0;
 }
-.mac-table th .searchable button svg {
+.react-sortable-table .mac-table th .searchable button svg {
     margin: 0;
     font-size: 12px;
 }
 
-.rst-badges {
+.react-sortable-table .rst-badges {
     padding: 0 15px;
     display: flex;
     margin-bottom: 15px;
 }
-.rst-badges .badge-item {
+.react-sortable-table .rst-badges .badge-item {
     display: inline-flex;
     align-items: center;
     margin-right: 7px;
@@ -105,7 +105,7 @@ table.align-center tr td {
     border-radius: 50px;
     transition: all 0.2s;
 }
-.rst-badges .badge-item .field {
+.react-sortable-table .rst-badges .badge-item .field {
     margin-right: 2px;
     font-size: 12px;
     display: inline-block;
@@ -114,7 +114,7 @@ table.align-center tr td {
     background: #ddd;
     border-radius: 50px;
 }
-.rst-badges .badge-item .label {
+.react-sortable-table .rst-badges .badge-item .label {
     display: inline-block;
     margin-right: auto;
     font-size: 13px;
@@ -123,14 +123,14 @@ table.align-center tr td {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.rst-badges .badge-item.default-item {
+.react-sortable-table .rst-badges .badge-item.default-item {
     cursor: pointer;
     padding:2px 12px;
     background: #2a81ec;
     border-color: #2a81ec;
     color: white;
 }
-.rst-badges .badge-item .close {
+.react-sortable-table .rst-badges .badge-item .close {
     cursor: pointer;
     margin-left: 10px;
     display: inline-flex;
@@ -143,15 +143,15 @@ table.align-center tr td {
     color: #333;
     transition: all 0.2s;
 }
-.rst-badges .badge-item .close svg {
+.react-sortable-table .rst-badges .badge-item .close svg {
     font-size: 13px;
 }
-.rst-badges .badge-item .close:hover {
+.react-sortable-table .rst-badges .badge-item .close:hover {
     background: #2a81ec;
     color: white;
     transition: all 0.2s;
 }
-.rst-badges .badge-item.default-item:hover {
+.react-sortable-table .rst-badges .badge-item.default-item:hover {
     background: #5298ef;
     border-color: #5298ef;
     color: white;
