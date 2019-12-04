@@ -1,0 +1,92 @@
+/*mac table*/
+.responsive-table {
+    overflow: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.mac-table,.mac-table tr,.mac-table thead,.mac-table tbody {
+    border: 0;
+}
+.mac-table {
+    width: 100%;
+    margin: 0;
+    border: 0;
+}
+.mac-table tr {
+    border:0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+.mac-table tr:last-child {
+    border-bottom: 0;
+}
+.mac-table tr th,
+.mac-table tr td {
+    text-align: left;
+    border:0;
+    font-size: 13px;
+    padding:13px 15px;
+}
+.mac-table tr th {
+    background: #f6f6f6;
+    font-weight: 500;
+    padding:10px 15px;
+}
+.mac-table tr td {
+    font-weight: normal;
+}
+table.align-center tr th,
+table.align-center tr td {
+    text-align: center;
+}
+.mac-table tr.no-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #ce2626;
+}
+.mac-table tr.no-data td {
+    text-align: center;
+    font-weight: 500;
+}
+.mac-table th.sortable {
+    cursor: pointer;
+}
+.mac-table th.sortable svg {
+    margin-left: 10px;
+}
+
+.mac-table th.sortable span {
+    display: flex;
+    align-items: center;
+}
+.mac-table th .searchable {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+.mac-table th .searchable input {
+    border: 1px solid #ddd;
+    padding: 3px 5px;
+    max-width: 120px;
+    height: auto;
+    font-size: 12px;
+    border-radius: 4px 0 0 4px;
+}
+.mac-table th .searchable select {
+    font-size: 12px;
+    border-color: #ddd;
+    border-radius: 4px 0 0 4px;
+}
+.mac-table th .searchable button {
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 4px 4px 0;
+}
+.mac-table th .searchable button svg {
+    margin: 0;
+    font-size: 12px;
+}
