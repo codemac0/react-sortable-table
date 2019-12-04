@@ -11,9 +11,9 @@ class Demo extends Component {
     }; 
 
     this.data = [
-      {id:1,name:"Mukesh suthar",email:"medjfr01@gamil.com",status:1},
-      {id:1,name:"Ketan suthar",email:"meketan@gamil.com",status:0},
-      {id:1,name:"Vinod suthar",email:"medjfr01@gamil.com",status:1},
+      {id:1,name:"Mukesh suthar",email:"medjfr01@gamil.com",status:1,created_at:"2019-12-10"},
+      {id:1,name:"Ketan suthar",email:"meketan@gamil.com",status:0,created_at:"2019-12-14"},
+      {id:1,name:"Vinod suthar",email:"medjfr01@gamil.com",status:1,created_at:"2019-12-14"},
     ];
 
     this.columns = [
@@ -33,13 +33,12 @@ class Demo extends Component {
         field:"email",
         label:"Email",
         sortable: true,
-        searchable: true,
-        searchType: "date"
+        searchable: true
       },{
         field:"status",
         label:"Status",
         searchable: true,
-        searchList: [{label:"Active",value:1},{label:"Inactive",value:0}],
+        searchList: [{label:"All",value:""},{label:"Active",value:1},{label:"Inactive",value:0}],
         render: (row) => {
           if(row.status == 1) {
             return <span>Active</span>
@@ -47,6 +46,12 @@ class Demo extends Component {
             return <span>Inactive</span>
           }
         }
+      },{
+        field:"created_at",
+        label:"Created at",
+        sortable: true,
+        searchable: true,
+        searchType: "date"
       }
     ];
     this.handleChange = this.handleChange.bind(this);
@@ -67,6 +72,7 @@ class Demo extends Component {
           onChange={this.handleChange}
           baseUrl={'frontend/records'}
           multipleSearch={true}
+          badges={true}
         />
       </div>
     )

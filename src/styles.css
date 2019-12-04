@@ -90,3 +90,70 @@ table.align-center tr td {
     margin: 0;
     font-size: 12px;
 }
+
+.rst-badges {
+    padding: 0 15px;
+    display: flex;
+    margin-bottom: 15px;
+}
+.rst-badges .badge-item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 7px;
+    padding: 2px 2px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+.rst-badges .badge-item .field {
+    margin-right: 2px;
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 600;
+    padding: 1px 6px;
+    background: #ddd;
+    border-radius: 50px;
+}
+.rst-badges .badge-item .label {
+    display: inline-block;
+    margin-right: auto;
+    font-size: 13px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.rst-badges .badge-item.default-item {
+    cursor: pointer;
+    padding:2px 12px;
+    background: #2a81ec;
+    border-color: #2a81ec;
+    color: white;
+}
+.rst-badges .badge-item .close {
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2px;
+    border-radius: 50px;
+    background: white;
+    color: #333;
+    transition: all 0.2s;
+}
+.rst-badges .badge-item .close svg {
+    font-size: 13px;
+}
+.rst-badges .badge-item .close:hover {
+    background: #2a81ec;
+    color: white;
+    transition: all 0.2s;
+}
+.rst-badges .badge-item.default-item:hover {
+    background: #5298ef;
+    border-color: #5298ef;
+    color: white;
+    transition: all 0.2s;
+}
